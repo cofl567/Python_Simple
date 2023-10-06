@@ -79,4 +79,11 @@ for i in range(1, 11):
 for i in range(1, 10):
     print(f"2x{i}={2*i}")
 
+    # 문제5) list c 의 최소값, 최대값찾기
+    c = [2, 5, 7, 1, 8]
+
+
+
+    print(f"최소값: {num_min}")
+    print(f"최대값: {num_max}")
 
