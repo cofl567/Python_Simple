@@ -160,4 +160,4 @@ test(10, 20, 30)
 def test2(**kwargs):
     for key, value in kwargs.items():
         print(key, value)
-test2(a=1, b=2, c=3)
+test2(a=1, b=2, c=3
