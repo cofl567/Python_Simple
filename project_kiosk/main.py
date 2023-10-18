@@ -65,7 +65,7 @@ while True:
 
     # 6. 추가 주문 yes or no?
     print("●○ 추가 주문하시겠습니까?(y/n)")
-    flog = 0 # 추가 주문 y/n 여부
+    flag = 0 # 추가 주문 y/n 여부
     while True:
         choice_yn = input("y/n: ")
         if choice_yn == "y" or choice_yn == "Y":
@@ -80,7 +80,8 @@ while True:
     if flag == 1:
         print("="*50)
         print("== 고객님이 주문하신 메뉴 ==")
-        for i, menu in enumerate(menu_save):
+        for menu in enumerate(menu_save):
+            print(menu)
             print(f"==  {i+1}.{menu}")
 
         total_price = 0 # 총 결제금액
