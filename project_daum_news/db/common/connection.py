@@ -20,7 +20,7 @@
 #    - IP: 내 컴퓨터를 접속 할 수 있는 주소
 #    - PORT: 컴퓨터 내에 프로그램의 위치
 #    - ID and PW
-#   2.SQL을 사용해서 작업 진행
+#   2.SQL을 사용해서 작업(CRUD) 진행
 #    - SQL(구조질의어): RDB를 사용하기 위해서는 반드시 사용!
 #   CREATE      -> INSERT
 #   READ        -> SELEVT
