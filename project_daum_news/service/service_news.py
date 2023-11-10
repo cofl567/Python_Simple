@@ -1,6 +1,7 @@
 # 해당 URL 접속해서 기사 [제목, 본문, 날짜]수집
 import requests
 from bs4 import BeautifulSoup
+from db.news_dao import add_news
 
 
 def get_news(url: str):  #
@@ -20,3 +21,12 @@ def get_news(url: str):  #
         content += p.get_text()
 
     print(f"본문: {content}")
+
+    # 수집한 데이터 DB에 저장
+    # MongoDB -> JSON = Dict Type
+    data = {
+        "title": title,
+        "content": content,
+        "date": reg_date
+    }
+    add_news(data)
