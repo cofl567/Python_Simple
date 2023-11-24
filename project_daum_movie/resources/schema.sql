@@ -4,7 +4,7 @@ USE SIMPLE;
 CREATE TABLE `tbl_review` (
 	`no` INT(10) NOT NULL AUTO_INCREMENT,
 	`title` VARCHAR(100) NOT NULL,
-	`review` VARCHAR(100),
+	`review` VARCHAR(500),
 	`score` INT(10) NOT NULL DEFAULT '0',
 	`writer` VARCHAR(50) NULL,
 	`reg_date` VARCHAR(50) NOT NULL,
